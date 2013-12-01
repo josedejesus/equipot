@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registro</title>
+</head>
+
+<body>
+
+<h1 align="center">Registro</h1>
+
+<form>
+Nombre de Usuario: <input type="text" name="Nombre de Usuario"><br>
+Contraseña: <input type="password" name="Contraseña"><br>
+Repetir Contraseña: <input type="password" name="Repetir Contraseña"><br>
+Correo Electronico: <input type="text" name="Correo Electronico"><br>
+<p>Sexo</p>
+<input type="radio" name="sex" value="male">Masculino<br>
+<input type="radio" name="sex" value="female">Femenino<br>
+<p>Pais</p>
+	<SELECT name="Pais">
+		<OPTION VALUE="Alemania">Alemania</OPTION>
+		<OPTION VALUE="Argentina">Argentina</OPTION>
+		<OPTION VALUE="Brasil">Brasil</OPTION>
+		<OPTION VALUE="Canada">Canada</OPTION>
+		<OPTION VALUE="Chile">Chile</OPTION>
+		<OPTION VALUE="China">China</OPTION>
+		<OPTION VALUE="Colombia">Colombia</OPTION>
+		<OPTION VALUE="Ecuador">Ecuador</OPTION>
+		<OPTION VALUE="España">España</OPTION>
+		<OPTION VALUE="Estados Unidos">Estados Unidos</OPTION>
+		<OPTION VALUE="Italia">Italia</OPTION>
+		<OPTION VALUE="Japon">Japon</OPTION>
+		<OPTION VALUE="Mexico">Mexico</OPTION>
+		<OPTION VALUE="Paraguay">Paraguay</OPTION>
+		<OPTION VALUE="Portugal">Portugal</OPTION>
+		<OPTION VALUE="Uruguay">Uruguay</OPTION>
+	</SELECT>
+Otro Pais (Opcional): <input type="text" name="Otro Pais"><br>
+<br>
+<input type="checkbox" name="Nota" value="Bike">Recibir correos sobre noticias de nuestra pagina<br>
+<br>
+<input type="submit" value="Enviar">
+</form>
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
+
+</body>
+
+</html>

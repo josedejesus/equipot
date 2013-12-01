@@ -10,6 +10,8 @@
 <h1 align="center">JunkChuy´s</h1>
 <p>En esta pagina encontraras una gran variedad de videojuegos que podras jugar en tu PC.</p>
 
+<h2 align="right"><a href="Pagina Web/Paginas Secundarias/Registro.html">Registro</a></h2>
+
 <h3><a href="Pagina Web/Paginas Secundarias/AION.html">AION</a></h3>
 <p>Tipo de Videojuego: MMORPG</p>
 <p>AION es un multijugador masivo en linea juego de rol (MMORPG) publicado por NCsoft. El juego combina PvP (Player vs Player) y PvE (Player vs Enemy) en un juego de fantasia medio ambiente.</p>
@@ -79,6 +81,28 @@
 <p>Tipo de Videojuego: Juego de accion-aventura de mundo abierto</p>
 <p>Grand Theft Auto V es un videojuego de accion-aventura de mundo abierto desarrollado por la compañia britanica Rockstar North y distribuido por Rockstar Games.</p>
 <img border="0" src="Pagina Web/imagenes juegos pc/gta.jpg" alt="lelouch" width="600" height="400">
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 

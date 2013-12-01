@@ -19,6 +19,28 @@ Por primera vez el juego se centraría en los 3 personajes distintos en vez de u
 <embed width="950" height="600" src="http://www.youtube.com/v/eUK2XjpnuHc" type="application/x-shockwave-flash"></embed>
 <embed width="950" height="600" src="http://www.youtube.com/v/ounm0fwRHkM" type="application/x-shockwave-flash"></embed>
 
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
+
 </body>
 
 </html>
