@@ -24,57 +24,11 @@
 <h2>Clases</h2>
 <p>Existen 4 tipos de clases en este videojuego donde cada una de ellas tiene 2 sub clases:</p>
 
-<p>Guerreros</p>
-<ul>
-<li>Corporal</li>
-<li>Mental</li>
-</ul>
-
-<p>Ninja</p>
-<ul>
-<li>Asesino</li>
-<li>Arquero</li>
-</ul>
-
-<p>Sura</p>
-<ul>
-<li>Espejo</li>
-<li>Magia Negra</li>
-</ul>
-
-<p>Chaman</p>
-<ul>
-<li>Dragon</li>
-<li>Curacion</li>
-</ul>
-
 <h2>Video</h2>
 
 <embed width="950" height="600" src="http://www.youtube.com/v/DKdv7qzTnFI" type="application/x-shockwave-flash"></embed>
 <embed width="950" height="600" src="http://www.youtube.com/v/M7ShoMp5awI" type="application/x-shockwave-flash"></embed>
 <embed width="950" height="600" src="http://www.youtube.com/v/XUJ53HHHt2Q" type="application/x-shockwave-flash"></embed>
-
-<hr>
-<script type="text/javascript">
-var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-var f=new Date();
-document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
-</script>
-<script type="text/javascript">
-function startTime(){
-today=new Date();
-h=today.getHours();
-m=today.getMinutes();
-s=today.getSeconds();
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
-t=setTimeout('startTime()',500);}
-function checkTime(i)
-{if (i<10) {i="0" + i;}return i;}
-window.onload=function(){startTime();}
-</script>
-<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 
