@@ -3,21 +3,77 @@
 
 <head>
 	<title>Titan Quest</title>
+	
+		<style type="text/css">
+	
+	body
+	{
+	background-color:#D8D8D8;
+	margin-top:40px;
+	margin-right:75px;
+	margin-bottom:40px;
+	margin-left:75px;
+	text-align:justify;
+	}
+	
+	h1
+	{
+	font-family: "Times New Roman";
+	color:blue;
+	text-decoration: underline;
+	}
+	
+	h2
+	{
+	font-family: "Times New Roman";
+	font-style: italic;
+	color:red;
+	text-decoration: underline;
+	}
+	
+	p
+	{
+	font-family: "Times New Roman";
+	}
+	
+	</style>
+	
 </head>
 
 <body>
 
 <h1 align="center">Titan Quest</h1>
 
-<img border="0" src="juegos para pc/imagenes juegos pc/titan.jpg" alt="lelouch" width="600" height="400">
-<p>Titan Quest es un videojuego de rol de acción desarrollado por el estudio Iron Lore y publicado por la distribuidora THQ.
-El videojuego se ambienta al principio en la antigua Grecia, una mitológica Grecia de Sátiros y Minotauros, en la cual el jugador se encarna en la piel de un guerrero sin pasado, y con el cual derrotará diferentes clases de monstruos mitológicos de todas las grandes civilizaciones de la antigüedad.</p>
+<p>Titan Quest es un videojuego de rol de accion desarrollado por el estudio Iron Lore y publicado por la distribuidora THQ.
+El videojuego se ambienta al principio en la antigua Grecia, una mitologica Grecia de Satiros y Minotauros, en la cual el jugador se encarna en la piel de un guerrero sin pasado, y con el cual derrotara diferentes clases de monstruos mitologicos de todas las grandes civilizaciones de la antig&uumledad.</p>
 
 <h2>Videos</h2>
 
-<embed width="950" height="600" src="http://www.youtube.com/v/wnJ6QU4Eqto" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/yFekh-wop_c" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/YW2kQ2Q4XVs" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/wnJ6QU4Eqto" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/yFekh-wop_c" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/YW2kQ2Q4XVs" type="application/x-shockwave-flash"></embed>
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 

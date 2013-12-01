@@ -3,6 +3,41 @@
 
 <head>
 	<title>Minecraft</title>
+	
+		<style type="text/css">
+	
+	body
+	{
+	background-color:#D8D8D8;
+	margin-top:40px;
+	margin-right:75px;
+	margin-bottom:40px;
+	margin-left:75px;
+	text-align:justify;
+	}
+	
+	h1
+	{
+	font-family: "Times New Roman";
+	color:blue;
+	text-decoration: underline;
+	}
+	
+	h2
+	{
+	font-family: "Times New Roman";
+	font-style: italic;
+	color:red;
+	text-decoration: underline;
+	}
+	
+	p
+	{
+	font-family: "Times New Roman";
+	}
+	
+	</style>
+	
 </head>
 
 <body>
@@ -13,17 +48,17 @@
 <h2>Modos de Juego</h2>
 
 <h3><em>Survival/Supervivencia</em></h3>
-<p>En el modo <strong>Survival</strong> (supervivencia), los jugadores poseen una barra de vida de 10 corazones. Hay que crear una mesa de crafteo para construir picos ,espadas , azada ... Los monstruos hostiles los atacan espontaneamente (salvo que esta partida este en modo pacifico), y pueden recibir daño (de estos y de otras maneras, tales como caidas, lava, etc.) y morir. Ademas poseen una barra de hambre, que han de rellenar obteniendo y consumiendo comida (de animales, zombis o plantas), y una barra de experiencia, obtenida al vencer mobs (monstruos), y al picar bloques de minerales (carbon, lapislazuli, redstone, esmeralda y diamante) o fundirlos (hierro y oro).</p>
+<p>En el modo <strong>Survival</strong> (supervivencia), los jugadores poseen una barra de vida de 10 corazones. Hay que crear una mesa de crafteo para construir picos ,espadas , azada ... Los monstruos hostiles los atacan espontaneamente (salvo que esta partida este en modo pacifico), y pueden recibir da&ntildeo (de estos y de otras maneras, tales como caidas, lava, etc.) y morir. Ademas poseen una barra de hambre, que han de rellenar obteniendo y consumiendo comida (de animales, zombis o plantas), y una barra de experiencia, obtenida al vencer mobs (monstruos), y al picar bloques de minerales (carbon, lapislazuli, redstone, esmeralda y diamante) o fundirlos (hierro y oro).</p>
 <p>Los distintos bloques y objetos se fabrican o recogen para luego ser almacenados en el inventario de los jugadores. Los bloques requieren unos segundos para ser extraidos, ademas de ciertas herramientas segun los casos. Al adquirir mejores recursos, aumenta la cantidad y calidad de las herramientas (cuanto mejor sea, mas cosas rompe en el caso del pico o lo hace mas rapido en todos los casos, excepto la azada, ademas de durar mas) y objetos que pueden fabricarse. Tambien existe el modo pacifico (peaceful mode) es lo mismo que survival pero no hay monstruos y recuperas vida cuando la pierdes.</p>
 
 <h3><em>Creative/Creativo</em></h3>
-<p>En el modo de juego <strong>Creative</strong> (creativo) se centra enteramente en el aspecto de la construccion libre. Los jugadores poseen un suministro ilimitado de todos los bloques y objetos del juego, que pueden colocar y destruir de forma instantánea. Ademas, no son atacados espontaneamente por los monstruos, no pueden recibir daño aunque, pueden morir cayendo del mundo y pueden volar libremente por el escenario.</p>
+<p>En el modo de juego <strong>Creative</strong> (creativo) se centra enteramente en el aspecto de la construccion libre. Los jugadores poseen un suministro ilimitado de todos los bloques y objetos del juego, que pueden colocar y destruir de forma instantanea. Ademas, no son atacados espontaneamente por los monstruos, no pueden recibir da&ntildeo aunque, pueden morir cayendo del mundo y pueden volar libremente por el escenario.</p>
 
 <h3><em>Adventure/Aventura</em></h3>
 <p>El modo <strong>Adventure</strong> (aventura) es identico al modo Survival, con la diferencia de que solamente es posible la interaccion con objetos como cofres, palancas, puertas, etc, y no la destruccion de bloques, exceptuando algunos que se pueden destruir con especificas herramientas tales como la piedra con el pico, la madera con el hacha, etc.</h4>
 
 <h3><em>Hardcore/Supervivencia Extrema</em></h3>
-<p>El modo <strong>Hardcore</strong> (supervivencia extrema) es identico al modo Survival, con la diferencia de que tras la muerte del jugador se borra el mundo generado y la dificultad esta fijada en Very Hard («muy difícil»).</p>
+<p>El modo <strong>Hardcore</strong> (supervivencia extrema) es identico al modo Survival, con la diferencia de que tras la muerte del jugador se borra el mundo generado y la dificultad esta fijada en Very Hard (muy dificil).</p>
 
 <h2>Tipo de Criaturas</h2>
 
@@ -53,9 +88,31 @@
 
 <h2>Videos</h2>
 
-<embed width="950" height="600" src="http://www.youtube.com/v/HcoGN4kUcjI" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/4Wfql3oYSyw" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/fKKkZYbdvW4" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/HcoGN4kUcjI" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/4Wfql3oYSyw" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/fKKkZYbdvW4" type="application/x-shockwave-flash"></embed>
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 

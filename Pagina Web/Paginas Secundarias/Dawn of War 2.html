@@ -3,21 +3,77 @@
 
 <head>
 	<title>Dawn of War 2</title>
+	
+		<style type="text/css">
+	
+	body
+	{
+	background-color:#D8D8D8;
+	margin-top:40px;
+	margin-right:75px;
+	margin-bottom:40px;
+	margin-left:75px;
+	text-align:justify;
+	}
+	
+	h1
+	{
+	font-family: "Times New Roman";
+	color:blue;
+	text-decoration: underline;
+	}
+	
+	h2
+	{
+	font-family: "Times New Roman";
+	font-style: italic;
+	color:red;
+	text-decoration: underline;
+	}
+	
+	p
+	{
+	font-family: "Times New Roman";
+	}
+	
+	</style>
+	
 </head>
 
 <body>
 
 <h1 align="center">Dawn of War 2</h1>
 
-<img border="0" src="juegos para pc/imagenes juegos pc/Dawn.jpg" alt="lelouch" width="600" height="400">
-<p>Es un videojuego de estrategia en tiempo real para PC desarrollado por Relic Entertainment y publicado por THQ. Está basado en el popular juego de tablero Warhammer 40.000 de Games Workshop. Warhammer 40000: Dawn of War fue lanzado en 2004. Desde 
+<p>Es un videojuego de estrategia en tiempo real para PC desarrollado por Relic Entertainment y publicado por THQ. Esta basado en el popular juego de tablero Warhammer 40.000 de Games Workshop. Warhammer 40000: Dawn of War fue lanzado en 2004. Desde 
 entonces se han lanzado tres expansiones, Winter Assault en 2005, Dark Crusade en 2006 y Soulstorm en 2007.</p>
 
 <h2>Videos</h2>
 
-<embed width="950" height="600" src="http://www.youtube.com/v/dmK9HrlskXU" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/g172IK_2Q64" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/5I8Jmh8Nqvw" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/dmK9HrlskXU" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/g172IK_2Q64" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/5I8Jmh8Nqvw" type="application/x-shockwave-flash"></embed>
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 

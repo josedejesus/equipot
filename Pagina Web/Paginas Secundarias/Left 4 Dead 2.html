@@ -3,21 +3,77 @@
 
 <head>
 	<title>Left 4 Dead 2</title>
+	
+		<style type="text/css">
+	
+	body
+	{
+	background-color:#D8D8D8;
+	margin-top:40px;
+	margin-right:75px;
+	margin-bottom:40px;
+	margin-left:75px;
+	text-align:justify;
+	}
+	
+	h1
+	{
+	font-family: "Times New Roman";
+	color:blue;
+	text-decoration: underline;
+	}
+	
+	h2
+	{
+	font-family: "Times New Roman";
+	font-style: italic;
+	color:red;
+	text-decoration: underline;
+	}
+	
+	p
+	{
+	font-family: "Times New Roman";
+	}
+	
+	</style>
+	
 </head>
 
 <body>
 
 <h1 align="center">Left 4 Dead 2</h1>
 
-<img border="0" src="juegos para pc/imagenes juegos pc/det.jpg" alt="lelouch" width="600" height="400">
-<p>Left 4 Dead 2 es un videojuego de disparos en primera persona de tipo survival horror creado por la compañía Valve Software. Corresponde a la secuela de Left 4 Dead y se lanzó al mercado el 17 de noviembre de 2009 en 
-Estados Unidos y Latinoamérica. En Europa llegó tres días después, el 20 de noviembre. Esta secuela, al igual que su predecesor, está disponible para PC </p>
+<p>Left 4 Dead 2 es un videojuego de disparos en primera persona de tipo survival horror creado por la compa&ntildeia Valve Software. Corresponde a la secuela de Left 4 Dead y se lanzo al mercado el 17 de noviembre de 2009 en 
+Estados Unidos y Latinoamerica. En Europa llego tres dias despues, el 20 de noviembre. Esta secuela, al igual que su predecesor, esta disponible para PC </p>
 
 <h2>Videos</h2>
 
-<embed width="950" height="600" src="http://www.youtube.com/v/GSPiW4YmNKw" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/nM1C3eLQyCI" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/AEd101t93FU" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/GSPiW4YmNKw" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/nM1C3eLQyCI" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/AEd101t93FU" type="application/x-shockwave-flash"></embed>
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 

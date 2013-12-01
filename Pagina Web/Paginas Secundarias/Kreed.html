@@ -3,20 +3,76 @@
 
 <head>
 	<title>Kreed</title>
+	
+		<style type="text/css">
+	
+	body
+	{
+	background-color:#D8D8D8;
+	margin-top:40px;
+	margin-right:75px;
+	margin-bottom:40px;
+	margin-left:75px;
+	text-align:justify;
+	}
+	
+	h1
+	{
+	font-family: "Times New Roman";
+	color:blue;
+	text-decoration: underline;
+	}
+	
+	h2
+	{
+	font-family: "Times New Roman";
+	font-style: italic;
+	color:red;
+	text-decoration: underline;
+	}
+	
+	p
+	{
+	font-family: "Times New Roman";
+	}
+	
+	</style>
+	
 </head>
 
 <body>
 
 <h1 align="center">Kreed</h1>
 
-<img border="0" src="juegos para pc/imagenes juegos pc/kre.jpg" alt="lelouch" width="600" height="400">
-<p> Juego muy violento de Rol en el cual puedes desempeñarte como heroe o montruo, el concepto es muy atractivo y además a muchos les gustó por el desvordante impacto de las armas y los implementos de ciencia ficción.</p>
+<p> Juego muy violento de Rol en el cual puedes desempe&ntildearte como heroe o montruo, el concepto es muy atractivo y ademas a muchos les gusto por el desvordante impacto de las armas y los implementos de ciencia ficcion.</p>
 
 <h2>Videos</h2>
 
-<embed width="950" height="600" src="http://www.youtube.com/v/TEq2orcvckI" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/FeejxzwEbWY" type="application/x-shockwave-flash"></embed>
-<embed width="950" height="600" src="http://www.youtube.com/v/6GWMXI5gaY" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/TEq2orcvckI" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/FeejxzwEbWY" type="application/x-shockwave-flash"></embed>
+<embed width="800" height="500" src="http://www.youtube.com/v/6GWMXI5gaY" type="application/x-shockwave-flash"></embed>
+
+<hr>
+<script type="text/javascript">
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var f=new Date();
+document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
 
 </body>
 
